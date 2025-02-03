@@ -1,0 +1,501 @@
+/* button */
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* general */
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(250, 250, 250);
+}
+
+/* index.html */
+
+.mainpage {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.mainpage-for-works {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    padding: 0;
+}
+
+/* bio-page */
+
+#bio-page {
+    width: 30vw;
+    margin: 0;
+    overflow-y: auto;
+    position: fixed;
+    z-index: 100;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.bio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* logo */
+
+.logo {
+    position: fixed;
+    margin: 0;
+    margin-left: 10px;
+    padding: 0;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 12%;
+    z-index: 999;
+}
+
+.logo img {
+    width: 100%;
+}
+
+/* main logo */
+
+.main-logo {
+    padding: 10px;
+}
+
+.main-logo img{
+    width: 70%;
+    display: flex;
+}
+
+/* linkedin, email, resume */
+
+.inquires {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.inquires a {
+    text-decoration: underline;
+}
+
+.inquires a:hover {
+    color: brown;
+}
+
+/* bio-page text */
+
+.brand-font {
+    font-weight: normal;
+    margin: 0;
+    padding: 10px;
+    font-size: 1.3em;
+}
+
+.main-bio p {
+    margin: 0;
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+/* work-page */
+
+#work-page {
+    width: 70vw;
+    margin-left: 30vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#work-page-main-image {
+    width: 100vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding: 0;
+}
+
+/* work-page buttons */
+
+.button-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.button img:hover {
+    opacity: 0.7;
+}
+
+.buttons img {
+    width: 100%;
+    max-width: 35em;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+}
+
+/* work-page text */
+
+.title {
+    text-align:left;
+    margin: 0;
+    font-family: serif;
+    padding-top: 10px;
+    font-size: 1.5em;
+}
+
+.description {
+    text-align: left;
+    font-weight: lighter;
+    margin: 0;
+    font-family: serif;
+    font-size: 1.3em;
+}
+
+/* main work page left description */
+.go-back-logo img{
+    width: 70%;
+}
+
+#container {
+    margin: 0;
+    overflow-x: hidden;
+    z-index: 100;
+    padding: 0;
+}
+
+.work-heading {
+    margin: 0;
+    padding: 10px;
+}
+
+.brand-work {
+    margin: 0;
+    padding: 10px;
+}
+
+.bio-work {
+    margin: 0;
+    padding: 10px;
+}
+
+/* main work page right image */
+
+.work-image-video {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.work-image-video video {
+    width: 100%;
+    height: 80vh;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-image-video img {
+    width: 50%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+/* second slide work pages with images */
+
+#image-work-pages {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.image-container {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.work-image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.work-image img {
+    width: 100%;
+    padding: 10px;
+}
+
+.work-image .doodle-withlove {
+    width: 97%;
+    gap: 10px;
+}
+
+.work-image .colour-withlove {
+    width: 60%;
+}
+
+/* anastomosis */
+
+.anasto-image-container{
+    width: 100vw;
+    height: 50vh;
+    justify-content: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.ig-postcard {
+    display: flex;
+    height: auto;
+}
+
+.ig-postcard img {
+    width: 30%;
+}
+
+.exhibition-videos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.exhibition-videos video {
+    width: 45%;
+}
+
+/* with love fonts */
+
+@font-face {
+    font-family: SuperRaven;
+    src: url(love-a-d/SuperRaven.ttf);
+  }
+
+@font-face {
+font-family: HelloKetta;
+src: url(love-a-d/HelloKetta.ttf);
+}
+
+.font1, .font2 {
+    gap: 10px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.work-image-font1 h1 {
+    font-family: SuperRaven;
+    color: white;
+}
+
+.font2 h1 {
+    font-family: HelloKetta;
+    font-size: 7rem;
+    font-weight: lighter;
+    text-align: center;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+/* with love type */
+.work-image-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* new with love */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.small-image-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100vw;
+    /* height: 60vh; */
+}
+
+.small-images {
+    width: 15%;
+    padding: 10px;
+    min-width: 410px;
+}
+
+/* new content-section */
+.content-section {
+    margin: 0;
+    padding: 0;
+}
+
+ /* new bio stuff */
+
+#content-description {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+ }
+
+.bio-section1, .bio-section2, .bio-section3 {
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.bio-section1 {
+    flex-basis: 22%;
+    margin: 0;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    padding: 0;
+}
+
+.bio-section2 {
+    flex-basis: 20%;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    padding: 0;
+}
+
+.bio-section3 {
+    flex-basis: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+/* new fonts */
+
+.heading h1 {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.heading, .link, .bio {
+    margin: 0;
+    padding: 0;
+}
+
+.heading h1, .heading h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.heading h2 {
+    font-weight: lighter;
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.heading p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.link p {
+    margin: 0;
+    font-size: 1.20rem;
+    text-decoration: underline;
+}
+
+.link h1 {
+    margin: 0;
+    font-size: 1.20rem;
+    text-decoration: nonw;
+    font-weight: lighter;
+}
+
+.bio p {
+    font-size: 1.25rem;
+    margin: 0;
+    padding: 0;
+}
+
+
+.image {
+    position: relative;
+    margin-top: 10px;
+}
+
+.image .image-title {
+    position: absolute;
+    bottom: 20px;
+    left: 28px;
+}
+
+.image-title h1{
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
+    font-size: 4rem;
+    font-weight: normal;
+    color: white;
+}
+
+.image-title h2 {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color: white;
+}
