@@ -123,10 +123,11 @@ body {
 /* work-page */
 
 #work-page {
-    width: 70vw;
-    margin-left: 30vw;
+    width: 80vw;
+    margin-left: 27vw;
     overflow-y: auto;
     overflow-x: hidden;
+    z-index: 99;
 }
 
 #work-page-main-image {
@@ -156,13 +157,13 @@ body {
     flex-wrap: wrap;
 }
 
-.button img:hover {
+.buttons img:hover {
     opacity: 0.7;
 }
 
 .buttons img {
     width: 100%;
-    max-width: 35em;
+    max-width: 33em;
     height: auto;
     display: flex;
     margin: 0 auto;
