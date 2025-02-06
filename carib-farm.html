@@ -67,22 +67,31 @@
                 <img src="caribfarm/content2.png" class="small-images" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
                 <img src="caribfarm/content3.png" class="small-images" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
                 <img src="caribfarm/content4.png" class="small-images" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+            </div>
         </section>
         <section class="gallery">
             <div class="small-image-container">
                 <img src="caribfarm/carib-mockup2.png" class="small-images" style="width: 100vw;">
             </div>
         </section>
+
+        <div class="popup">
+            <span>&times;</span>
+            <img src="caribfarm/content1.png">
+        </div>
     </section>
 
-    <!-- <script>
-        window.onscroll = function() {
-            var logos = document.getElementById('.logo');
-            if (window.pageYOffset > 500) {
-                logos.classList.add("scrollLogo");
-            } else {
-                logos.classList.remove("scrollLogo");
+    <script>
+        document.querySelectorAll('.gallery img').forEach(image => {
+            image.onclick = () => {
+                document.querySelector('.popup').style.display = 'block';
+                document.querySelector('.popup img').src = image.getAttribute('src');
             }
-        }
-    </script> -->
+        })
+        document.querySelector('.popup span').onclick = () => {
+                document.querySelector('.popup').style.display = 'none';
+            }
+    </script>
+
 </body>
+</html>

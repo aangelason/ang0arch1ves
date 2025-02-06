@@ -47,12 +47,30 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="gallery">
             <div class="small-image-container">
                 <img src="love-a-d/giveaway-poster copy.png" class="small-images" style="width: 20%; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
                 <img src="love-a-d/4sante copy.png" class="small-images" style="width: 20%; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
                 <img src="love-a-d/mar copy.png" class="small-images" style="width: 20%; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
                 <img src="love-a-d/band copy.png" class="small-images" style="width: 20%; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
         </section>
+
+        <div class="popup">
+            <span>&times;</span>
+            <img src="caribfarm/content1.png">
+        </div>
     </section>
+
+    <script>
+        document.querySelectorAll('.gallery img').forEach(image => {
+            image.onclick = () => {
+                document.querySelector('.popup').style.display = 'block';
+                document.querySelector('.popup img').src = image.getAttribute('src');
+            }
+        })
+        document.querySelector('.popup span').onclick = () => {
+                document.querySelector('.popup').style.display = 'none';
+            }
+    </script>
 </body>
+</html>

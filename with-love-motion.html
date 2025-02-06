@@ -49,9 +49,29 @@
         </section>
         <section class="gallery">
             <div class="small-image-container">
-                <img src="love-a-d/love-a-d-closed-book.png" class="small-images" style="width: 32%;">
-                <img src="love-a-d/love a.d_.png" class="small-images" style="width: 32%;">
-                <img src="love-a-d/love a.d.-STILL.png" class="small-images" style="width: 32%;">
+                <img src="love-a-d/love-a-d-closed-book.png" class="small-images" style="width: 30%;">
+                <img src="love-a-d/love a.d_.png" class="small-images" style="width: 30%;">
+                <img src="love-a-d/love a.d.-STILL.png" class="small-images" style="width: 30%;">
         </section>
+
+        <div class="popup">
+            <span>&times;</span>
+            <img src="caribfarm/content1.png">
+        </div>
+
     </section>
+
+    <script>
+        document.querySelectorAll('.gallery img').forEach(image => {
+            image.onclick = () => {
+                document.querySelector('.popup').style.display = 'block';
+                document.querySelector('.popup img').src = image.getAttribute('src');
+            }
+        })
+        document.querySelector('.popup span').onclick = () => {
+                document.querySelector('.popup').style.display = 'none';
+            }
+    </script>
+
 </body>
+</html>
