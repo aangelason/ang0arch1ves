@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Angela Son Digital Marketing, Social Media, Graphic Design</title>
+</head>
+
+<body>
+    <section class="logo">
+        <a href="index.html">
+            <img src="goback.png">
+        </a>
+    </section>
+    <section class="content-section">
+        <section id="beginning-image" style="padding-top: 25px;">
+            <div class="image" style="display: flex; justify-content: center; align-items: center;">
+                <img src="NEXT/NEXT_LOGO_BLKpng copy.png" style="width:52%;">
+                <div class="image-title">
+                    <h1 style="color: black; margin-left: 10px;"><i>NEXT: New Media Exhibition Team</i></h1>
+                </div>
+                <div class="image-title">
+                    <h2 style=" color: black; margin-left: 10px;">Social Marketing Contents created for NEXT</h2>
+                </div>
+            </div>
+        </section>
+        <section id="content-description" style="margin-top: 20px;">
+            <div class="bio-section1">
+                <div class="heading">
+                    <p>2024-2025</p>
+                    <h2><i>Digital Marketing, Social Media, Photoshop</i></h2>
+                </div>
+            </div>
+            <div class="bio-section2">
+                <div class="link">
+                    <p><a href="https://www.instagram.com/next.tmu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">NEXT Instagram⇗</a></p>
+                    <p><a href="https://www.linkedin.com/company/new-media-exhibition-team/posts/?feedView=all">NEXT Linkedin⇗</a></p>
+                </div>
+            </div>
+            <div class="bio-section3">
+                <div class="bio">
+                    <p>
+                        As the Head of Design and Marketing for NEXT, I lead social media content creation, develop marketing strategies, 
+                        and recruit new team members to support our exhibitions and community events at Toronto Metropolitan University. 
+                        I prioritize meaningful audience engagement, while fostering a positive work environment.
+                        Here are some of the projects I have contributed to so far, with more to come!
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="small-image-container">
+                <img src="NEXT/NM Valentine's Day event poster copy.mp4" class="small-images" style="width: 30%;">
+                <img src="anastomosis/IG POST.png" class="small-images" style="width: 30%;">
+                <img src="NEXT/NEXT 2025 Hiring Post copy.jpg" class="small-images" style="width: 30%;">
+            </div>
+        </section>
+
+        <div class="popup">
+            <span>&times;</span>
+            <img src="caribfarm/content1.png">
+        </div>
+
+    </section>
+
+    <script>
+        document.querySelectorAll('.gallery img').forEach(image => {
+            image.onclick = () => {
+                document.querySelector('.popup').style.display = 'block';
+                document.querySelector('.popup img').src = image.getAttribute('src');
+            }
+        })
+        document.querySelector('.popup span').onclick = () => {
+                document.querySelector('.popup').style.display = 'none';
+            }
+    </script>
+
+</body>
+</html>
