@@ -361,6 +361,7 @@ src: url(love-a-d/HelloKetta.ttf);
     flex-wrap: wrap;
 }
 .small-image-container {
+    overflow-x: hidden;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -371,8 +372,8 @@ src: url(love-a-d/HelloKetta.ttf);
 }
 
 .small-images {
-    width: 20%;
-    padding: 20px;
+    /* width: 20%; */
+    padding: 10px;
 }
 
 /* new content-section */
